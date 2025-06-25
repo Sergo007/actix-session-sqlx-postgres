@@ -1,6 +1,6 @@
 Use Postgres via Sqlx as session storage backend.
 
-```no_run
+```rust
 use actix_web::{web, App, HttpServer, HttpResponse, Error};
 use actix_session_sqlx_postgres::SqlxPostgresqlSessionStore;
 use actix_session::SessionMiddleware;
@@ -30,7 +30,7 @@ async fn main() -> std::io::Result<()> {
 
 If you already have a connection pool, you can use something like
 
-```no_run
+```rust
 use actix_web::{web, App, HttpServer, HttpResponse, Error};
 use actix_session_sqlx_postgres::SqlxPostgresqlSessionStore;
 use actix_session::SessionMiddleware;
